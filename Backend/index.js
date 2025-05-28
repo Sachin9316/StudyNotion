@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 require('dotenv').config();
+const dbConnect = require('./config/db');
 const port = process.env.PORT || 7000;
 
 app.use(express.urlencoded({ extended: true }));
@@ -13,3 +14,6 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
     console.log("Listining on port no.", port);
 })
+
+
+dbConnect();
