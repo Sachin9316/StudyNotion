@@ -15,5 +15,4 @@ app.listen(port, () => {
     console.log("Listining on port no.", port);
 })
 
-
 dbConnect();
