@@ -25,13 +25,23 @@ const userSchema = new mongoose.Schema({
         enum: ['Admin', 'Student', 'Instructor'],
         required: true,
     },
-    additionalDetails: {
+    additionalDetails: [{
         type: mongoose.Schema.Types.ObjectId,
         required: true,
         ref: "Profile",
+    }],
+    courses: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Course"
+    }],
+    image: {
+        type: String,
+        required: true
     },
-    courses: {
-        type: [],
-
-    }
+    courseProgress: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "CourseProgress",
+    }]
 })
+
+module.exports = mongoose.model('User', userSchema);
