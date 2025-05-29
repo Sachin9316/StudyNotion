@@ -15,6 +15,13 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
         trim: true,
+        unique: true,
+        validate: {
+            validator: function (v) {
+                return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+            },
+            message: props => `${props.value} is not a valid email!`
+        }
     },
     password: {
         type: String,
@@ -25,11 +32,11 @@ const userSchema = new mongoose.Schema({
         enum: ['Admin', 'Student', 'Instructor'],
         required: true,
     },
-    additionalDetails: [{
+    additionalDetails: {
         type: mongoose.Schema.Types.ObjectId,
         required: true,
         ref: "Profile",
-    }],
+    },
     courses: [{
         type: mongoose.Schema.Types.ObjectId,
         ref: "Course"
@@ -42,6 +49,6 @@ const userSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: "CourseProgress",
     }]
-})
+}, { timestamps: true })
 
 module.exports = mongoose.model('User', userSchema);
