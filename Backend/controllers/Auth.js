@@ -154,7 +154,7 @@ exports.login = async (req, res) => {
             const payload = {
                 email: isCheckUserExists.email,
                 is: isCheckUserExists._id,
-                role: isCheckUserExists.role
+                accountType: isCheckUserExists.accountType
             }
 
             const token = jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: "2h" });
