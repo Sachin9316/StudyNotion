@@ -1,0 +1,47 @@
+[33mcommit de3530a8269949093956af3d57590803b43529ee[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mdevelop[m[33m, [m[1;31morigin/develop[m[33m)[m
+Author: sachin7600 <sachin.upadhyay@ghanshyamdigital.com>
+Date:   Thu May 29 12:43:56 2025 +0530
+
+    reverted previous commit
+
+[33mcommit 6c7f23396168e79f2ccf395de30bd6c4bf71ead8[m
+Author: sachin7600 <sachin.upadhyay@ghanshyamdigital.com>
+Date:   Thu May 29 12:15:42 2025 +0530
+
+    testing git pr
+
+[33mcommit 543f5fa38962a998ed73a6ac6dbd3023a268d7d6[m[33m ([m[1;31morigin/feature/login[m[33m)[m
+Author: sachin7600 <sachin.upadhyay@ghanshyamdigital.com>
+Date:   Thu May 29 12:05:12 2025 +0530
+
+    Models creation completed
+
+[33mcommit 98611e832ef4e979e35fc486bb343a75ef02c63a[m
+Author: sachin7600 <sachin.upadhyay@ghanshyamdigital.com>
+Date:   Wed May 28 19:59:43 2025 +0530
+
+    User model (WIP)
+
+[33mcommit 6111024e422d809628c3032a5a89627025dfd569[m
+Author: sachin7600 <sachin.upadhyay@ghanshyamdigital.com>
+Date:   Wed May 28 19:52:17 2025 +0530
+
+    Added node files
+
+[33mcommit ba33454484da99611aa862d05e79897087ac2177[m
+Author: sachin7600 <sachin.upadhyay@ghanshyamdigital.com>
+Date:   Wed May 28 17:07:25 2025 +0530
+
+    setup of backend and frontend
+
+[33mcommit a4e62e2c1ca7ad0d2b2b483039cda34b7ed43449[m
+Author: sachin7600 <sachin.upadhyay@ghanshyamdigital.com>
+Date:   Wed May 28 17:00:59 2025 +0530
+
+    setup
+
+[33mcommit ea9f3104c931ac2848f6f2d17cc082a01707da29[m
+Author: SachinUpadhyay <102915821+Sachin9316@users.noreply.github.com>
+Date:   Wed May 28 16:06:02 2025 +0530
+
+    Initial commit
