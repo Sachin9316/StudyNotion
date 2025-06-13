@@ -29,7 +29,8 @@ exports.resetPasswordToken = async (req, res) => {
 
         return res.json({
             success: true,
-            msg: "Email sent successfully, please check email"
+            msg: "Email sent successfully, please check email",
+            updateUser,
         });
 
     } catch (error) {
